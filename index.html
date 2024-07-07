@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Java Spring Exception List </h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="検索....">
+            <button id="search-btn">検索</button>
+            <button id="export-text-btn" class="export-text">Text出力</button>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <h2>Category List</h2><br>
+            <ul id="category-list" class="list-group"></ul>
+        </aside>
+        <section id="exception-detail">
+            <h2>例外詳細</h2>
+        </section>
+    </main>
+    <button id="scroll-to-top-btn" class="scroll-to-top">Top</button>
+    <script src="script.js"></script>
+</body>
+</html>

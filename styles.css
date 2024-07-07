@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+}
+
+.search-container input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-container button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #a1a1a2;
+    color: white;
+    cursor: pointer;
+}
+
+#search-btn {
+    border-radius: 0 4px 4px 0;
+}
+
+#export-text-btn {
+    margin-left: 10px; /* Adjust margin as needed */
+    border-radius: 4px;
+}
+
+main {
+    display: flex;
+    padding: 1rem;
+}
+
+aside {
+    width: 25%;
+    padding: 1rem;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+section {
+    width: 75%;
+    padding: 1rem;
+}
+
+.list-group-item {
+    cursor: pointer;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+.exception-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+}
+
+h4, h5 {
+    margin: 0.5rem 0;
+}
+
+h2{
+    margin: 0px;
+    padding: 0%;
+    text-align: center;
+}
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem; /* スクロールトップボタンを右に移動 */
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #a1a1a2;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    aside {
+        width: 25%;
+        margin-bottom: 0;
+    }
+    section {
+        width: 75%;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 0.5rem;
+    }
+
+    .search-container input,
+    .search-container button,
+    #export-text-btn {
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+
+    .scroll-to-top {
+        right: 1rem; /* スクロールトップボタンを右に移動 */
+    }
+}
+
+@media (max-width: 430px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .search-container input,
+    .search-container button,
+    #export-text-btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    aside, section {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .scroll-to-top {
+        right: 1rem;
+    }
+}
